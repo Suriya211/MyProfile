@@ -1,0 +1,343 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background: #007BFF; /* Bootstrap Primary Color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: fadeIn 2s; /* Fade-in animation for header */
+}
+
+header p {
+    margin: 5px 0;
+}
+
+a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 900px; /* Max width for content */
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #007BFF; /* Underline with primary color */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section {
+    background: #fff; /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for sections */
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s; /* Transition for hover effect */
+}
+
+section:hover {
+    transform: scale(1.02); /* Slightly enlarge section on hover */
+}
+
+/* Welcome Section */
+#welcome {
+    background-color: #e7f1ff; /* Light blue background for welcome section */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.welcome-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.welcome-photo {
+    width: 50%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.welcome-content h2 {
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    color: #555;
+}
+.about-me {
+    background-color: #e9f7ff; /* Light blue background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    margin: 20px 0; /* Margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.about-me:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.about-me h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    color: #007BFF; /* Primary color for headings */
+    border-bottom: 2px solid #007BFF; /* Underline effect */
+    padding-bottom: 10px; /* Space below the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase letters for the heading */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+header, main, footer {
+    position: relative; /* Ensure header, main, and footer are above the particles */
+    z-index: 1; /* Bring content above the background */
+    padding: 20px; /* Adjust padding as necessary */
+}
+
+/* Additional styles for other elements */
+
+
+.intro {
+    font-size: 1.2rem; /* Larger font size for the intro paragraph */
+    color: #333; /* Dark text color */
+    margin-bottom: 15px; /* Space below the intro paragraph */
+}
+
+.info, .languages {
+    font-size: 1rem; /* Regular font size for info and languages */
+    color: #555; /* Medium gray for text */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+strong {
+    color: #007BFF; /* Highlighted color for important text */
+}
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light gray line under table rows */
+}
+
+th {
+    background-color: #007BFF; /* Table header background color */
+    color: white;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    flex: 0 1 45%; /* Two items per row */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #007BFF; /* Border around skill items */
+    border-radius: 5px;
+    background: #f9f9f9; /* Light background for skill items */
+}
+
+/* Project Section */
+.project {
+    border-left: 4px solid #007BFF; /* Left border for project sections */
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin: 0;
+    color: #007BFF;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007BFF; /* Footer background color */
+    color: white;
+    position: relative;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading sizes for smaller screens */
+    }
+
+    .skills {
+        flex-direction: column; /* Stack skills vertically */
+    }
+
+    .skill {
+        flex: 1; /* Full width on small screens */
+    }
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+.welcome-content {
+    text-align: center;
+}
+
+.welcome-photo {
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    border-radius: 50%; /* Make the image round */
+    border: 3px solid #333; /* Optional: add border */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.welcome-photo:hover {
+    transform: scale(1.3); /* Scale up on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; /* White text for footer */
+}
+
+.gallery img {
+    width: 100px; /* Set width for gallery images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 30px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space out skill items */
+}
+
+.skill {
+    width: 30%; /* Set width for skill items */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: add border */
+}
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #FFD700;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --light-blue: #e7f1ff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+}
